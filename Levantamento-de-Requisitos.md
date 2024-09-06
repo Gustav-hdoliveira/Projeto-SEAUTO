@@ -1,8 +1,8 @@
 # Planejamento de Requisitos para Aplicação
 
 ## 1. Objetivo da Aplicação
-Descreva o propósito da aplicação. Qual problema ela resolve? Quem são os usuários-alvo?
-- **Exemplo**: Desenvolver uma plataforma de comunicação entre usuários (pen pals), permitindo o envio de mensagens com desenhos para outros usuários aleatórios na base de dados.
+
+O SEAUTO é um aplicativo para emergências que necessitam de auxílio profissional de algum órgão de segurança ou saúde, como a Polícia Militar, corpo de Bombeiros e SAMU (atendimento médico), com uma interface simples com fácil acessibilidade para agilizar o processo, com o sistema de localização via satélite para enviar localização em tempo real do ocorrido, junto da opção de personalizar via caixa de texto para detalhar a situação.
 
 ---
 
