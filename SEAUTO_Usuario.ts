@@ -45,5 +45,9 @@ class Usuario{
         Nescessidades especiais: ${this.condicoes_especiais} `
     }
 
+    getCPF():number{return this.CPF}
+
+    getNome():string{return this.nome}
+
     
 }
