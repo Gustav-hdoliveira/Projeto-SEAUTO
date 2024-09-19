@@ -1,4 +1,4 @@
-class OcorrenciaTP {
+export class OcorrenciaTP {
     id_SVTP: number
     nome_ocorrencia: string
     
@@ -7,4 +7,10 @@ class OcorrenciaTP {
         this.nome_ocorrencia = nome
     }
     
+    getIDSVTP():number{
+        return this.id_SVTP
+    }
+    getNomeSVTP():string{
+        return this.nome_ocorrencia
+    }
 }
