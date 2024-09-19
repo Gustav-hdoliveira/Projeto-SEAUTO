@@ -1,7 +1,7 @@
 let leitor = require("readline-sync")
 
-class Usuario{
-    CPF: number
+export class Usuario{
+    CPF: string
     nome: string
     telefone: string
     endereco: string
@@ -9,7 +9,7 @@ class Usuario{
     condicoes_especiais: string
     senha_gov: string
 
-    constructor(CPF: number, nome: string, telefone: string, endereco: string, idade: number, condicoes: string, senha: string){
+    constructor(CPF: string, nome: string, telefone: string, endereco: string, idade: number, condicoes: string, senha: string){
         this.CPF = CPF
         this.nome = nome
         this.telefone = telefone
@@ -23,10 +23,10 @@ class Usuario{
         let CPFUP = leitor.question("Insira seu CPF: ")
         let nome = leitor.question("Nome completo: ")
         let telefone = leitor.question("Telefone: ")
-        let endereco = leitor.question("Endereco de moradia atual: ")
         console.log("Para um ascesso mais rápido caso a emergencia seja em sua residencia")
+        let endereco = leitor.question("Endereco de moradia atual: ")
         let idade = leitor.question("Sua idade: ")
-        console.log("Você possui condições e nescessidades especias que deverão ser levadas em concideração? se sim, por favor ensira os dados aqui")
+        console.log("Você possui condições ou nescessidades especias que deverão ser levadas em concideração? (alergias, deficiencias etc) se sim, por favor ensira os dados aqui")
         let condespec = leitor.question("Ensira:")
         this.CPF = CPFUP
         this.nome = nome
@@ -45,9 +45,10 @@ class Usuario{
         Nescessidades especiais: ${this.condicoes_especiais} `
     }
 
-    getCPF():number{return this.CPF}
+    getCPF():string{return this.CPF}
 
     getNome():string{return this.nome}
 
+    getSenha():string{return this.senha_gov}
     
 }
