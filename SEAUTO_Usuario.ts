@@ -1,4 +1,5 @@
 let leitor = require("readline-sync")
+import { rede } from "./SEAUTO_Main"
 
 export class Usuario{
     CPF: string
@@ -34,6 +35,7 @@ export class Usuario{
         this.endereco = endereco
         this.idade =idade
         this.condicoes_especiais = condespec
+        rede.usuarios.push(CPFUP, nome, telefone, endereco, idade, condespec)
     }
     
     getUsuario(): string{
