@@ -1,10 +1,12 @@
 import { Usuario } from "./SEAUTO_Usuario";
 import { Fonte } from "./SEAUTO_OrigemServiço"
 import { OcorrenciaTP } from "./SEAUTO_OcorrenciaTP";
+import { Ocorrencia } from "./SEAUTO_Ocorrencia";
 export class Rede {
     usuarios: Usuario[]
     fontes: Fonte[]
     OcorrenciaTipo: OcorrenciaTP[]
+    Ocorrencias: Ocorrencia[]
     constructor(user: [], fonte: [], ocTP) {
         this.usuarios = user
         this.fontes = fonte
